@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Face Liveness Detection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Face Liveness Detection</h1>
+    
+    <!-- Video Stream -->
+    <video id="video" width="640" height="480" autoplay></video>
+    
+    <!-- Button to Start Liveness Detection -->
+    <button id="liveness-btn">Check Liveness</button>
+
+    <!-- Result Text (for showing Success/Fail message) -->
+    <div id="auth-result"></div>
+
+    <!-- Retry Button (shown when authentication fails) -->
+    <button id="retry-btn" style="display: none;">Retry</button>
+    
+    <!-- TensorFlow JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.13.0/dist/tf.min.js"></script>
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
